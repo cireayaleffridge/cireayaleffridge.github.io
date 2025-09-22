@@ -1,0 +1,87 @@
+/*
+@font-face{font-family: curve; src: url("imgs/font/Cream\ Cake.otf")}
+*/
+
+body{
+color:purple;
+background-color: cadetblue;
+
+}
+
+
+#avatar {
+    margin: .5em auto;
+/* image size is 160px so i made its container a little bigger to fit the borders */
+    max-width: 164px;
+    max-height: 164px;
+    border-radius: 8em;
+}
+#avatar img {
+    background: rgb(45, 10, 49);
+    border: 2px double rgb(0, 0, 0);
+    max-width: 160px;
+    border-radius: 8em;
+}
+
+.name{
+text-align: center;
+font-size: 40px;
+font-weight: bolder;
+
+}
+
+.title{
+text-align: center;
+font-size: 24px;
+
+
+}
+
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 14px 8px 24px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+@media screen and (max-height: 450px) {
+
+
+}
+
+
+
