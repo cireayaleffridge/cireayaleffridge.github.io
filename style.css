@@ -1,17 +1,50 @@
-/*
-@font-face{font-family: curve; src: url("imgs/font/Cream\ Cake.otf")}
-*/
+/* CSS   */
+
+
+
+@font-face{font-family: forme; src: url("imgs/oleo-script.bold.ttf")}
+@font-face{font-family: mainStyle; src: url("imgs/Paper\ Inko.otf")}
+
+
+
+.home-button{
+border: solid black 3px;
+border-radius: 4em;
+
+
+}
 
 body{
+/*  set background delete bottom */
+
+background-color: rgba(135, 113, 144, 0.34);
 color:purple;
-background-color: cadetblue;
+
+
+
+/* header fsr */
+
+header {
+    background: url("imgs/desktop_bg.jpg");
+    background-size: 100%;
+    background-position: center;
+/* change the minimum height if you want it to take up more/less space */
+    max-width: 100%;
+    min-height: 250px;
+    margin: 0 auto;
+    /* i have a default border-radius set, but i didn't want rounded corners on this element */
+    padding: 0.5em;
+    border-radius: 4px;
+    box-shadow: rgb(50, 50, 50) 8px 8px 40px;
 
 }
 
 
+
+
+
 #avatar {
     margin: .5em auto;
-/* image size is 160px so i made its container a little bigger to fit the borders */
     max-width: 164px;
     max-height: 164px;
     border-radius: 8em;
@@ -25,19 +58,46 @@ background-color: cadetblue;
 
 .name{
 text-align: center;
-font-size: 40px;
+font-size: 42px;
 font-weight: bolder;
+font-family: forme;
+color: #8D43AC;
+text-shadow: 2px 2px black;
+
+
 
 }
 
 .title{
 text-align: center;
 font-size: 24px;
-
+font-family: arial;
 
 }
 
+.small-title{
+text-align: center;
+font-size: 18px;
+font-family: consolas;
 
+}
+
+.center-p{
+text-align: center;
+font-size 20px;
+font-family: arial;
+}
+
+p{
+  font-family: mainStyle;
+}
+
+
+.sidenav a:hover { background: linear-gradient(104deg, rgba(206, 151, 251, 0) 0.9%, rgba(206, 151, 251, 1) 2.4%, rgba(206, 151, 251, 0.5) 5.8%, rgba(206, 151, 251, 0.1) 93%, rgba(206, 151, 251, 0.7) 96%, rgba(206, 151, 251, 0) 98%), linear-gradient(183deg, rgba(206, 151, 251, 0) 0%, rgba(206, 151, 251, 0.3) 7.9%, rgba(206, 151, 251, 0) 15%); box-decoration-break: clone; }
+
+
+
+			/* NAVIGATION */
 
 .sidenav {
   height: 100%;
@@ -46,7 +106,7 @@ font-size: 24px;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: rgba(23, 23, 23, 0.80);
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -55,7 +115,8 @@ font-size: 24px;
 .sidenav a {
   padding: 14px 8px 24px 32px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 22px;
+  font-family: mainStyle;
   color: #818181;
   display: block;
   transition: 0.3s;
@@ -73,12 +134,19 @@ font-size: 24px;
   margin-left: 50px;
 }
 
+
+
+			/* MOBILE DESIGN */
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
-}
 
-@media screen and (max-height: 450px) {
+  body{ /*change the image*/ } 
+
+
+
+
+
 
 
 }
